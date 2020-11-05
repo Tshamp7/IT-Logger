@@ -31,12 +31,8 @@ const TechListModal = () => {
   return (
     <div id="tech-list-modal" className="modal">
       <div className="modal-content">
-        <ul className="collection with-header">
-          <li className="collection-header">
-            <h4 className="center">Techs</h4>
-          </li>
-          {loading ? <Preloader /> : techList}
-        </ul>
+        <h4>Technician List</h4>
+        <ul className="collection">{loading ? <Preloader /> : techList}</ul>
       </div>
     </div>
   );

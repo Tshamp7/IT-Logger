@@ -4,9 +4,12 @@ import PropTypes from "prop-types";
 const TechItem = ({ tech }) => {
   return (
     <li className="collection-item">
-      <span>Tech ID:{tech.id}</span>
-      <span>Tech First Name: {tech.firstName}</span>
-      <span>Tech Last Name: {tech.lastName}</span>
+      <div>
+        {tech.firstName} {tech.lastName}
+        <a href="#!" className="secondary-content">
+          <i className="material-icons grey-text">delete</i>
+        </a>
+      </div>
     </li>
   );
 };
