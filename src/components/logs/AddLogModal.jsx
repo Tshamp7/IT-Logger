@@ -3,6 +3,7 @@ import M from "materialize-css/dist/js/materialize.min.js";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { addLog } from "../../actions/logActions";
+import TechSelectOptions from "../techs/TechSelectOptions";
 
 // addLog is being destructured from props here.
 const AddLogModal = ({ addLog }) => {
@@ -53,8 +54,7 @@ const AddLogModal = ({ addLog }) => {
               <option value="" disabled>
                 Select Technician
               </option>
-              <option value="John Dow">John Doe</option>
-              <option value="Sara Wilson">Sara Wilson</option>
+              <TechSelectOptions />
             </select>
           </div>
         </div>
